@@ -1,0 +1,25 @@
+@import '@arco-design/web-react/dist/css/arco.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.arco-form-label-item .arco-form-item-symbol svg {
+  display: inline;
+  vertical-align: baseline;
+}
+.arco-table table {
+  table-layout: auto;
+}
+.arco-modal-footer.arco-modal-footer {
+  text-align: center;
+}
+.arco-empty-image img {
+  display: inline;
+}
