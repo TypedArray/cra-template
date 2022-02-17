@@ -4,11 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Features
 
-[Tailwind CSS](https://tailwindcss.com/) is used to style the application.
-[React Router](https://reacttraining.com/react-router/web/guides/quick-start) is used to manage the application's routes.
-[@arco-design/web-react](https://arco.design/) is used to manage the application's components.
-[@typedarray/arco-design-modal](https://www.npmjs.com/package/@typedarray/arco-design-modal) is used to manage the application's modals.
-[Formik](https://jaredpalmer.com/formik/) is used to manage form validation.
+[Tailwind CSS](https://tailwindcss.com/)
+[React Router](https://reacttraining.com/react-router/web/guides/quick-start)
 
 ## Available Scripts
 

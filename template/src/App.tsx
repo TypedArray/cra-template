@@ -1,30 +1,28 @@
-import axios from 'axios';
-import consolev from 'consolev';
-import { format } from 'date-fns';
-import preval from 'preval.macro';
-import { useRoutes } from 'react-router-dom';
-import './App.css';
-import routes from './routes';
-
-// Start the mocking conditionally.
-if (process.env.NODE_ENV === 'development') {
-  const { worker } = require('./__mocks__/browser');
-  worker.start();
-}
-/**
- * 打印项目信息
- */
-consolev(
-  `${process.env.REACT_APP_NAME}@${process.env.REACT_APP_VERSION}`,
-  process.env.REACT_APP_SHA,
-  format(preval`module.exports = Date.now();`, 'yyyy/MM/dd HH:mm:ss')
-);
-
-axios.defaults.withCredentials = true;
+import logo from './logo.svg';
 
 function App() {
-  const element = useRoutes(routes);
-  return element;
+  return (
+    <div className="text-center">
+      <header className="bg-gray-600 min-h-screen flex flex-col items-center justify-center text-lg text-white">
+        <img
+          src={logo}
+          className="h-[40vmin] motion-safe:animate-[spin_20s_linear_infinite]"
+          alt="logo"
+        />
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <a
+          className="text-sky-300 hover:text-sky-600"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;
